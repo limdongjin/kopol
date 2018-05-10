@@ -49,6 +49,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     }
   }, {
+      timestamps: true,
+      underscored: true,
     tableName: 'footchairs'
   });
 };
