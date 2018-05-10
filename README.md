@@ -9,3 +9,5 @@
 > Express.js
 
 > DB: AWS RDS(MYSQL)
+
+> Deploy Environment: AWS Elastic Beanstalk
