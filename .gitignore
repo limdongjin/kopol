@@ -1,5 +1,5 @@
 .idea/
-
+sequelize.json
 # Logs
 logs
 *.log
