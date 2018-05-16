@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 const models = require('./../models');
 
 /*
@@ -7,7 +7,7 @@ GET /bills/:id
 id는 의안 번호를 의미함.
 */
 /* 20대 국회 법안의 상세 정보를 보냄 */
-router.get('/:id', function(req, res, next) {
+router.get('/:id', function (req, res) {
     models.bills.findById(req.params.id)
         .then(bill_data => {
             console.log(bill_data);
@@ -66,7 +66,7 @@ Query Parameters
  --------------------------------------
 */
 
-router.get('/', function (req, res, next) {
+router.get('/', function (req, res) {
     let condition = { };
 
     condition.where = req.query.main_foot ? { main_footchair: { $like: `%${ req.query.main_foot }%` }} : {};
@@ -124,7 +124,7 @@ router.get('/', function (req, res, next) {
                    description: "20대 국회의 법안 목록입니다.",
                    total: result.count,
                    page: parseInt(req.query.page) ? parseInt(req.query.page) : 1,
-                   ids: result.rows,
+                   data: result.rows,
                });
            })
            .catch(err => {

@@ -16,10 +16,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DATE,
       allowNull: false
     },
-    properties: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
     name: {
       type: DataTypes.STRING(255),
       allowNull: true
@@ -48,24 +44,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(255),
       allowNull: true
     },
-    properties2: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
     hoovalsix: {
       type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    hoopersix: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    imaddr: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    rank: {
-      type: DataTypes.INTEGER(11),
       allowNull: true
     },
     email2: {
@@ -76,11 +56,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(255),
       allowNull: true,
       defaultValue: 'x'
-    },
-    perank: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true,
-      defaultValue: '0'
     },
     secretary: {
       type: DataTypes.TEXT,
@@ -149,12 +124,10 @@ module.exports = function(sequelize, DataTypes) {
     hoovalseven: {
       type: DataTypes.TEXT,
       allowNull: true
-    },
-    hooperseven: {
-      type: DataTypes.TEXT,
-      allowNull: true
     }
   }, {
+      timestamps: true,
+      underscored: true,
     tableName: 'people'
   });
 };
