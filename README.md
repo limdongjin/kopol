@@ -293,4 +293,4 @@ Query Parameters
 
 > DB: AWS RDS(MYSQL)
 
-> Deploy Environment: AWS Elastic Beanstalk
+> Deploy Environment: AWS Lambda + API Gateway ( Serverless )
