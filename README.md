@@ -295,4 +295,4 @@ Query Parameters
 
 > Deploy Environment: AWS Lambda + API Gateway ( Serverless )
 
-<img width="50%" height="10%" src="/image_readme/Kopol Architect.png"></img>
+<img width="50%" height="10%" src="/Kopol Architect.png"></img>
