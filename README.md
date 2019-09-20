@@ -1,8 +1,32 @@
-### Introduction
+# Introduction
 "kopol"은 대한민국의 정치와 관련한 정보를 API로 제공합니다. 
 해당 레포지토리는 API 서버의 구현과정을  공유합니다.
 
-### API Detail 
+## Setup
+
+1. install some dependencies
+```bash
+$ npm install
+
+$ npm install -g sequelize-cli  
+```
+
+2. sequelize setup
+```bash
+$ sequelize init:config --config config/sequelize.json
+```
+3. configure your database info. `config/sequelize.json`
+
+## About API Server 
+> Node.js Express Web Framework
+
+> DB: AWS RDS(MYSQL)
+
+> Deploy Environment: AWS Lambda + API Gateway ( Serverless )
+
+<img width="50%" height="10%" src="/Kopol Architect.png"></img>
+
+## API Detail 
 API 주소: https://kopol.tojung.me
 
 20대 국회 법안 API
@@ -288,11 +312,3 @@ Query Parameters
 "hoovalseven": "274801669 "
 }
 ```
-### About API Server 
-> Node.js Express Web Framework
-
-> DB: AWS RDS(MYSQL)
-
-> Deploy Environment: AWS Lambda + API Gateway ( Serverless )
-
-<img width="50%" height="10%" src="/Kopol Architect.png"></img>
