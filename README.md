@@ -3,7 +3,7 @@
 해당 레포지토리는 API 서버의 구현과정을  공유합니다.
 
 ### API Detail 
-API 주소: https://api.2jung.com
+API 주소: https://kopol.tojung.me
 
 20대 국회 법안 API
 
@@ -40,7 +40,7 @@ Query Parameters
  | main_foot   | 대표발의자로 검색
  --------------------------------------
 ``` 
->> `example` GET https://api.2jung.com/bills 
+>> `example` GET https://kopol.tojung.me/bills 
 
 20대 국회 모든 법안의 목록을 보냄. 
 ```
@@ -52,7 +52,7 @@ Query Parameters
 }
 ```
 
->> `example` GET https://api.2jung.com/bills?res_type=all&&order=desc&&page=1
+>> `example` GET https://kopol.tojung.me/bills?res_type=all&&order=desc&&page=1
 ```
 {
 "description": "20대 국회의 법안 목록입니다.",
@@ -68,7 +68,7 @@ Query Parameters
 }
 ```
 
->> `example` GET https://api.2jung.com/bills?query=대학교
+>> `example` GET https://kopol.tojung.me/bills?query=대학교
 ``` 
 {
 "description": "20대 국회의 법안 목록입니다.",
@@ -78,7 +78,7 @@ Query Parameters
 }
 ```
 
->> `example` GET https://api.2jung.com/bills?query=대학교&&search_type=title&&res_type=all&&order=desc
+>> `example` GET https://kopol.tojung.me/bills?query=대학교&&search_type=title&&res_type=all&&order=desc
 ``` 
 {
 "description": "20대 국회의 법안 목록입니다.",
@@ -96,7 +96,7 @@ Query Parameters
 ```
 GET /bills/:id
 ```
->> `example` GET https://api.2jung.com/bills/2000001
+>> `example` GET https://kopol.tojung.me/bills/2000001
 
 법안의 상세 정보를 보냄. 
 
@@ -197,7 +197,7 @@ Query Parameters
  --------------------------------------
 ``` 
 
->> `example` GET https://api.2jung.com/people
+>> `example` GET https://kopol.tojung.me/people
 ```
 {
 "description": "20대 국회의원 목록",
@@ -212,7 +212,7 @@ Query Parameters
 ]
 }
 ```
->>  `example` GET https://api.2jung.com/people?name="주민"&&res_type=all
+>>  `example` GET https://kopol.tojung.me/people?name="주민"&&res_type=all
 ```
 {
 "description": "20대 국회의원 목록",
@@ -253,7 +253,7 @@ Query Parameters
 ]
 }
 ```
->> `example` GET https://api.2jung.com/people/110
+>> `example` GET https://kopol.tojung.me/people/110
 ```
 {
 "id": 110,
